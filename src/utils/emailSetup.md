@@ -51,24 +51,3 @@ const publicKey = '9g4mCUsxKVxiwjxBx'; // Replace with your Public Key
 1. Deploy your portfolio or test locally
 2. Fill out the contact form
 3. Check your email for the message
-
-## Alternative Solutions
-
-### Option 1: Formspree (Simpler Setup)
-- Go to [Formspree.io](https://formspree.io/)
-- Create account and get form endpoint
-- Update form action to point to Formspree
-
-### Option 2: Netlify Forms (If deploying to Netlify)
-- Add `netlify` attribute to form
-- Netlify automatically handles form submissions
-
-### Option 3: Backend Service
-- Create a simple Node.js/Express backend
-- Use services like Nodemailer to send emails
-- Deploy to Heroku, Vercel, or similar platforms
-
-## Security Notes
-- Never expose private keys in frontend code
-- EmailJS public key is safe to use in frontend
-- Consider rate limiting for production use
