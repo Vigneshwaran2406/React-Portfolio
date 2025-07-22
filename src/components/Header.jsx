@@ -16,7 +16,7 @@ const Header = () => {
   const handleDownloadResume = () => {
     // Create a sample resume download
     const link = document.createElement('a');
-    link.href = 'src\\components\\Vigneshwaran.pdf'; // This would be your actual resume file
+    link.href = './Vigneshwaran.pdf'; // This would be your actual resume file
     link.download = 'Vigneshwaran.pdf';
     link.click();
   };
