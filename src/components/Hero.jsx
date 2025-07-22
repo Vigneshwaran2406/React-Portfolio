@@ -15,6 +15,13 @@ const Hero = () => {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
+     const handleDownloadResume = () => {
+    // Create a sample resume download
+    const link = document.createElement('a');
+    link.href = './Vigneshwaran.pdf'; // This would be your actual resume file
+    link.download = 'Vigneshwaran.pdf';
+    link.click();
+  };
 
   return (
     <section id="hero" className="hero">
@@ -46,7 +53,7 @@ const Hero = () => {
             >
               View My Work
             </button>
-            <button className="btn-secondary">
+            <button className="btn-secondary" onClick={handleDownloadResume}>
               Download CV
             </button>
           </div>
