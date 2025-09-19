@@ -36,7 +36,7 @@ const Contact = () => {
         from_email: formData.email,
         subject: formData.subject,
         message: formData.message,
-        to_email: 'vvignesh000@gmail.com', // Your email where you want to receive messages
+        to_email: 'wvignesh000@gmail.com', // Your email where you want to receive messages
       };
 
       await emailjs.send(serviceId, templateId, templateParams, publicKey);
