@@ -35,8 +35,7 @@ const Contact = () => {
         from_name: formData.name,
         from_email: formData.email,
         subject: formData.subject,
-        message: formData.message,
-        to_email: 'wvignesh000@gmail.com', // Your email where you want to receive messages
+        message: formData.message,to_email: 'wvignesh000@gmail.com', // Your email where you want to receive messages
       };
 
       await emailjs.send(serviceId, templateId, templateParams, publicKey);
@@ -72,8 +71,7 @@ const Contact = () => {
                   <Mail size={24} />
                 </div>
                 <div className="contact-item-content">
-                  <p>Email</p>
-                  <p>wvignesh000@gmail.com</p>
+                  <p>Email</p> <p>wvignesh000@gmail.com</p>
                 </div>
               </div>
 
